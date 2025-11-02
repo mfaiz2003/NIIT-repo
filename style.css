@@ -204,4 +204,5 @@ body{
 
 .testimonial-card{
   width: 400px;
+  background: linear-gradient(to bottom, #FFFFFF, #E3F0FF);
 }
