@@ -3,7 +3,7 @@
   const rightBtn = document.getElementById("slideRight");
 
   let scrollAmount = 0;
-  const cardWidth = 440; // Card width + margin
+  const cardWidth = 420; // Card width + margin
 
   rightBtn.addEventListener("click", () => {
     track.scrollBy({ left: cardWidth, behavior: "smooth" });
