@@ -206,3 +206,8 @@ body{
   width: 400px;
   background: linear-gradient(to bottom, #FFFFFF, #E3F0FF);
 }
+@media(max-width: 768px){
+  .testimonial-card{
+    height: 100px;
+  }
+}
