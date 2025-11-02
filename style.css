@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner section */
+
+.bnr-h-1{
+  position: absolute;
+  z-index: 10;
+  background-color: #FFCB05;
+  padding: 8px 8px;
+  border-radius: 0 0 20px 0;
+  font-family: serif;
+  font-weight: 800;
+}
+
+.bnr-h-2{
+  display: flex;
+  justify-content: end;
+}
+.bnr-h-2 button{
+  background-color: #FFCB05;
+  border: none;
+  box-shadow: none;
+  border-radius: 9px;
+}
+
+.bnr-h-3{
+  color: #FFCB05;
+  margin-left: 110px;
+  margin-top: 90px;
+}
+.bnr-h-3 p{
+  font-size: 18px;
+}
+.bnr-h-3 h1{
+  font-size: 60px;
+  font-weight: bolder;
+}
+.bnr-h-3 span{
+  font-size: 60px;
+  color: white;
+  padding-top: -5px;
+  font-weight: normal;
+}
+@media (max-width: 768px){
+  .bnr-h-3{
+    margin-left: 20px;
+    margin-top: 70px;
+  }
+  .bnr-h-3 p{
+  font-size: 12px;
+  }
+  .bnr-h-3 h1{
+    font-size: 32px;
+    font-weight: bolder;
+  }
+  .bnr-h-3 span{
+    font-size: 32px;
+  }
+}
+
+.bnr-h-4{
+  color: white;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+@media (max-width: 768px){
+  .bnr-h-4{
+    margin-left: -10px;
+    font-size: 15px;
+    padding: 0 15px;
+    text-align: justify;
+  }
+}
+
+
+.bnr-h-5{
+  color: white;
+  display: flex;
+  gap: 40px;
+  margin: 30px 110px;
+}
+.bnr-h-5 h3{
+  font-size: 40px;
+  font-weight: bolder;
+}
+@media (max-width: 768px){
+  .bnr-h-5{
+    margin: 10px 20px;
+    gap: 60px;
+  }
+  .bnr-h-5 h3{
+    font-size: 25px;
+  }
+  .bnr-h-5 h5{
+    font-size: 12px;
+  }
+}
+
+.bnr-img-3{
+  margin-top: 70px;
+}
+@media (max-width: 768px){
+  .bnr-img-3{
+    margin-top: 350px; 
+  }
+}
+
+.form-panel {
+  width: 600px;
+  height: 300px;
+  margin-right: 110px;
+}
+
+.form-control {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 12px;
+}
+.form-control:focus {
+  box-shadow: 0 0 5px rgba(255, 203, 5, 0.7);
+  border-color: #FFCB05;
+}
+.btn:hover {
+  background-color: #e6b800 !important;
+}
+.form-check-label a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .form-panel{
+    left: 20px;
+    width: 370px;
+    height: auto;
+    margin-top: 260px;
+  }
+  .form-panel h5 {
+    font-size: 16px;
+  }
+  .form-control {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .form-check-label {
+    font-size: 12px;
+  }
+}
