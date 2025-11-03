@@ -347,9 +347,11 @@ body{
 
 .course-section{
   background: radial-gradient(circle at 70% 40%, #1c5db4 0%, #003366 100%);
+  height: auto;
+  padding: 60px 0;
 }
 .course-heading{
-  padding: 70px 0;
+  padding: 40px 0;
 }
 .course-heading span{
   color: #FFCB05;
@@ -357,15 +359,41 @@ body{
 .course-heading h1{
   font-weight: bold;
 }
-.course-box{
-  padding: 0 110px;
+.course-box {
+  margin: 0 110px;
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #FFFFFF, #E3F0FF);
 }
-.course-box div{
-  height: 220px;
+.course-box > div {
+  height: auto;
   width: 100%;
-  background-color: red;
-  border: 1px solid white;
+  padding: 30px;
+}
+.box-fill-2{
+  background-color: #FFCB05;
+  display: block;
+  width: 70%;
+  padding: 10px;
+  border-radius: 15px;
+}
+.box-fill-2 h5{
+  font-weight: bold;
+}
+.box-fill-1 button{
+  margin-top: 20px;
+  padding: 4px 25px;
+  background-color: #0061AF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+@media(max-width: 768px){
+  .course-box{
+    margin: 0 20px;
+  }
+  .box-fill-2{
+    width: 100%;
+  }
 }
