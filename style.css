@@ -106,23 +106,22 @@ body{
 }
 .h-div h5{
   font-size: 14px;
-  padding: 5px 5px;
+  padding: 0 5px;
 }
 .h-div h1{
   font-size: 35px;
-  padding: 10px 5px;
+  padding: 5px 5px;
 }
 .h-div li{
   font-size: 14px;
-  padding: 0;
 }
 .h-div ul{
-  padding-top: 20px;
+  padding-top: 5px;
 }
 .placement-sec{
   width: auto;
-  padding: 15px 10px;
-  gap: 15px;
+  padding: 10px 10px;
+  gap: 40px;
 }
 .placement-sec h3{
   font-size: 23.14px;
