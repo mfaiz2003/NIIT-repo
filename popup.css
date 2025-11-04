@@ -1,0 +1,89 @@
+.pop-up-section .modal-dialog {
+  max-width: 850px;
+}
+
+.pop-up-section .modal-content {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 350px; /* 🔹 Chhoti height fix */
+  display: flex;
+  align-items: stretch;
+}
+
+.popup-container {
+  display: flex;
+  height: 100%;
+}
+
+/* Left side */
+.popup-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right side */
+.popup-right {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* OTP boxes */
+.otp-box {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #ccc;
+}
+
+.otp-box:focus {
+  border-color: #FFCB05;
+  box-shadow: 0 0 5px #FFCB05;
+}
+
+.popup-right .btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #fff;
+  opacity: 1;
+  z-index: 10;
+}
+
+.popup-right {
+  position: relative; /* required for absolute positioning of close btn */
+}
+
+
+@media (max-width: 768px) {
+  .pop-up-section .modal-content {
+    flex-direction: column;
+    height: auto; 
+  }
+
+  .popup-left {
+    height: 200px;
+  }
+
+  .popup-right {
+    padding: 25px;
+  }
+
+  .otp-box {
+    width: 45px;
+    height: 45px;
+  }
+}

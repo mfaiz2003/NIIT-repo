@@ -39,3 +39,42 @@ logoTracks.forEach((track, index) => {
 
     animate();
   });
+
+  document.getElementById("openPopup").addEventListener("click", function() {
+      
+      if (!document.getElementById("otpModal")) {
+        fetch("popup.html")
+          .then(response => response.text())
+          .then(html => {
+
+            document.getElementById("popupContainer").innerHTML = html;
+            const modal = new bootstrap.Modal(document.getElementById("otpModal"));
+            modal.show();
+          })
+          .catch(err => console.error("Failed to load popup:", err));
+      } else {
+
+        const modal = new bootstrap.Modal(document.getElementById("otpModal"));
+        modal.show();
+      }
+    });
+
+  const faqs = document.querySelectorAll(".faq-item");
+
+  faqs.forEach((faq) => {
+    faq.querySelector(".faq-question").addEventListener("click", () => {
+      // Close all others
+      faqs.forEach((item) => {
+        if (item !== faq) {
+          item.classList.remove("active");
+          item.querySelector(".faq-toggle").textContent = "+";
+        }
+      });
+
+      // Toggle current
+      faq.classList.toggle("active");
+      const toggleBtn = faq.querySelector(".faq-toggle");
+      toggleBtn.textContent = faq.classList.contains("active") ? "−" : "+";
+    });
+  });
+

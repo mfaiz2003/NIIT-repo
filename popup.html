@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./popup.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <!-- popup.html -->
+<div class="modal fade" id="otpModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 rounded-4 overflow-hidden">
+      <div class="popup-container d-flex flex-column flex-md-row">
+        <div class="popup-left text-white d-flex justify-content-center align-items-center p-4">
+          <img src="./assets/Why (1).png" class="img-fluid" alt="Career">
+        </div>
+
+        <div class="popup-right bg-white p-4 flex-grow-1">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <h5 class="fw-bold mb-2">Enter OTP</h5>
+          <p class="text-muted small mb-4">Enter the OTP sent to <b>+91 8585X 85XX</b>
+            <a href="#" class="text-primary text-decoration-none">Edit</a>
+          </p>
+
+          <div class="d-flex justify-content-center gap-2 mb-4">
+            <input type="text" maxlength="1" class="otp-box form-control text-center fs-4" />
+            <input type="text" maxlength="1" class="otp-box form-control text-center fs-4" />
+            <input type="text" maxlength="1" class="otp-box form-control text-center fs-4" />
+            <input type="text" maxlength="1" class="otp-box form-control text-center fs-4" />
+          </div>
+
+          <button class="btn btn-warning w-100 fw-bold py-2">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+crossorigin="anonymous"></script>
+</body>
+</html>

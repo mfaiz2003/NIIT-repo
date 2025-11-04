@@ -12,66 +12,69 @@
 <body>
 
   <!-- banner section -->
-   <section class="position-relative">
+  <section class="header-section position-absolute">
 
-  <!-- Background Image -->
-  <div>
-    <img src="./assets/Rectangle 1.png" alt="Background" class="w-100 vh-100 object-fit-cover d-block">
-  
-    <!-- Overlay Image -->
-    <img src="./assets/Frame 6.png" alt="Overlay" class="position-absolute top-50 start-50 translate-middle w-100 vh-100 z-1">
-  </div>
-
-  <div class="position-absolute top-0 start-0 d-flex w-100 justify-content-between align-items-center">
-    <div class="px-0 py-0 d-flex justify-content-center align-items-center" style="background-color: #FFCB05; width: 120px; height: 60px; border-radius: 0 0 20px 0;">
-      <img src="./assets/niit-logo.png" alt="" >
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="px-0 py-0 d-flex justify-content-center align-items-center logo-img">
+      <img src="./assets/niit-logo.png" alt="">
     </div>
     <div class="pt-3"> 
-      <button type="button" class="btn btn-warning fw-semibold" style="margin-right: 30px;">Request a Call Back</button>
+      <button type="button" class="btn btn-warning fw-semibold request-btn" >Request a Call Back</button>
     </div>
   </div>
+  </section>
 
+  <!-- banner-text-section -->
 
-  <!-- 🔹 Left & Right Boxes -->
-  <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column flex-md-row  align-items-center ">
+  <section class="banner-section">
+    <div id="popupContainer"></div>
     
-    <!-- Left Box -->
-    <div class="text-white rounded-3 w-100 w-md-50 h-div">
-      <p class="box-heading-1">LEARN WHAT THE INDUSTRY DEMANDS</p>
-      <h1 class="box-heading-2">JAVA DEVELOPMENT <br />CERTIFICATE</h1>
-      <h1 class="box-heading-3">PROGRAM</h1>
+    <img src="./assets/Frame 6.png" alt="" class="position-absolute z-1 vh-100 w-100">
 
-      <div class="box-ul gap-4">
-        <ul>
-          <li>Learn DSA, MERN, and AWS to become the top 1% developer.</li>
-          <li>Curriculum designed and delivered by experts from Google, Microsoft & Amazon.</li>
-          <li>Build projects like Google Drive, LinkedIn and E-commerce.</li>
-        </ul>
-      </div>
+    <div class="container position-relative z-1">
+      <div class="row d-flex justify-content-between container-parent">
+        <div class="col">
 
-      <div class="placement-sec d-flex">
-        <div>
-          <h3>25 LPA</h3>
-          <p>Highest Salary</p>
+        <div class="text-white rounded-3 h-div">
+          <h5>LEARN WHAT THE INDUSTRY DEMANDS</h5>
+          <h1>JAVA DEVELOPMENT <br>CERTIFICATE <br> <span>PROGRAM</span></h1> 
+      
+
+        <div class="box-ul gap-4">
+          <ul>
+            <li>Learn DSA, MERN, and AWS to become the top 1% developer.</li>
+            <li>Curriculum designed and delivered by experts from Google, Microsoft & Amazon.</li>
+            <li>Build projects like Google Drive, LinkedIn and E-commerce.</li>
+          </ul>
         </div>
-        <div>
-          <h3>9.5 LPA</h3>
-          <p>Average Salary</p>
-        </div>
-        <div>
-          <h3>400+</h3>
-          <p>Hiring Partners</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Right Box -->
-    <div class=" bg-white p-4 rounded-3 text-center text-md-start form-div">
-      <h5 class="text-center mb-4">Enroll In Just A Few Easy Steps!</h5>
+        <div class="placement-sec d-flex">
+          <div>
+            <h3>25 LPA</h3>
+            <p>Highest Salary</p>
+          </div>
+          <div>
+            <h3>9.5 LPA</h3>
+            <p>Average Salary</p>
+          </div>
+          <div>
+            <h3>400+</h3>
+            <p>Hiring Partners</p>
+          </div>
+        </div>
+        </div>
 
-          <form action="#">
-            <div class="mb-3">
-              <input type="text" id="mobile" class="form-control form-control-lg" placeholder="Mobile No.">
+        </div>
+
+        <!-- banner-form-section -->
+        
+        <div class="col">
+          <div class=" bg-white p-4 rounded-3 text-center text-md-start form-div ">
+            <h5 class="text-center mb-4">Enroll In Just A Few Easy Steps!</h5>
+
+          <form action="#" class="banner-form-section">
+            <div class="mb-3 form-mobile-input">
+              <input type="text" id="mobile" class="form-control form-control-lg" placeholder="Mobile No">
             </div>
         
             <div class="form-check mb-4">
@@ -82,561 +85,19 @@
               </label>
             </div>
         
-            <button type="submit" class="btn w-100 fw-bold py-2 text-dark" style="background-color: #FFCB05;">
+            <button type="submit" class="btn w-100 fw-bold py-2 text-dark" id="openPopup">
               Request a Call Back
             </button>
           </form>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- hero section -->
-<section class="hero-sec">
-
-<div class="hero-heading">
-  <h4 class="fw-bold">
-    Curriculum: Executive Diploma in Data Science & AI
-  </h4>
-  <h2>Experience an all-new 2025</h2>
-  <h3>Curriculum</h3>
-</div>
-
-  <div class="parent">
-    <!-- Left/Top Buttons -->
-    <div class="button-panel">
-      <button onclick="showChild(1)">Front-end Dev with React & GenAi Advanced Program</button>
-      <button onclick="showChild(2)">SQL Essentials with GenAi</button>
-      <button onclick="showChild(3)">Java: Object-Oriented Programming</button>
-      <button onclick="showChild(4)">Programming using Python</button>
-      <button onclick="showChild(5)">Front-end Dev with React & GenAi Advanced Program</button>
-      <button onclick="showChild(6)">SQL Essentials with GenAi</button>
-      <button onclick="showChild(7)">Java: Object-Oriented Programming</button>
-    </div>
-
-    <!-- Right/Bottom Content -->
-    <div class="content-panel">
-      <div id="child1" class="child">
-        <div>
-          <h2>Front-end Dev with React &  GenAi Advanced Program</h2>
-          <p>
-            Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
-            Connection object boolean align device comment. Select text editor team hand a star slice 
-            thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
-            device variant. Connection object boolean align device comment.
-          </p>
-          <h5>Topics covered</h5>
-      
-          <ul>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-          </ul>
-
-          <h5>Skills you’ll gain</h5>
-          <div>
-            <button>Java</button>
-            <button>MySQL</button>
-            <button>NumPy</button>
-            <button>Pandas</button>
-            <button>ChatGPT</button>
-          </div>
-          <button>Apply Now</button>
-        </div>
-      </div>
-      <div id="child2" class="child">
-        <div>
-          <p>
-            Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
-            Connection object boolean align device comment. Select text editor team hand a star slice 
-            thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
-            device variant. Connection object boolean align device comment.
-          </p>
-      
-          <ul>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-          </ul>
-      
-          <div>
-            <button>Java</button>
-            <button>MySQL</button>
-            <button>NumPy</button>
-            <button>Pandas</button>
-            <button>ChatGPT</button>
           </div>
         </div>
-      </div>
-      <div id="child3" class="child"><div>
-          <p>
-            Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
-            Connection object boolean align device comment. Select text editor team hand a star slice 
-            thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
-            device variant. Connection object boolean align device comment.
-          </p>
-      
-          <ul>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-          </ul>
-      
-          <div>
-            <button>Java</button>
-            <button>MySQL</button>
-            <button>NumPy</button>
-            <button>Pandas</button>
-            <button>ChatGPT</button>
-          </div>
-        </div></div>
-      <div id="child4" class="child">
-        <div>
-          <p>
-            Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
-            Connection object boolean align device comment. Select text editor team hand a star slice 
-            thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
-            device variant. Connection object boolean align device comment.
-          </p>
-      
-          <ul>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-          </ul>
-      
-          <div>
-            <button>Java</button>
-            <button>MySQL</button>
-            <button>NumPy</button>
-            <button>Pandas</button>
-            <button>ChatGPT</button>
-          </div>
-        </div>
-      </div>
-      <div id="child5" class="child">
-        <div>
-          <p>
-            Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
-            Connection object boolean align device comment. Select text editor team hand a star slice 
-            thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
-            device variant. Connection object boolean align device comment.
-          </p>
-      
-          <ul>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-          </ul>
-      
-          <div>
-            <button>Java</button>
-            <button>MySQL</button>
-            <button>NumPy</button>
-            <button>Pandas</button>
-            <button>ChatGPT</button>
-          </div>
-        </div>
-      </div>
-      <div id="child6" class="child">
-        <div>
-          <p>
-            Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
-            Connection object boolean align device comment. Select text editor team hand a star slice 
-            thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
-            device variant. Connection object boolean align device comment.
-          </p>
-      
-          <ul>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-          </ul>
-      
-          <div>
-            <button>Java</button>
-            <button>MySQL</button>
-            <button>NumPy</button>
-            <button>Pandas</button>
-            <button>ChatGPT</button>
-          </div>
-        </div>
-      </div>
-      <div id="child7" class="child">
-        <div>
-          <p>
-            Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
-            Connection object boolean align device comment. Select text editor team hand a star slice 
-            thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
-            device variant. Connection object boolean align device comment.
-          </p>
-      
-          <ul>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-            <li>Figma Ipsum component variant main layer. Layer outline export.</li>
-          </ul>
-      
-          <div>
-            <button>Java</button>
-            <button>MySQL</button>
-            <button>NumPy</button>
-            <button>Pandas</button>
-            <button>ChatGPT</button>
-          </div>
-        </div>
+
       </div>
     </div>
-  </div>
-   <script>
-    function showChild(num) {
-      const children = document.querySelectorAll('.child');
-      children.forEach(div => div.style.display = 'none');
-      document.getElementById('child' + num).style.display = 'block';
-    }
-
-    // Show first content by default
-    showChild(1);
-  </script>
-</section>
-
-<!-- succes section -->
-
-<section>
-  <div class="text-center mt-5">
-    <h1>Our success lies in our learners success stories</h1>
-  </div>
-
-  <section class="py-5">
-  <div class="container">
-    <h3 class="text-center mb-4">Work on real projects and build a solid practical understanding</h3>
-
-    <div class="position-relative">
-      <!-- Scrollable Card Track -->
-      <div
-        id="cardTrack"
-        class="d-flex overflow-hidden"
-        style="scroll-behavior: smooth; transition: transform 0.5s ease;">
-
-        <!-- Card 1 -->
-        <div class="card flex-shrink-0 text-center p-4 shadow-sm rounded-4 border-0 mx-2 testimonial-card">
-          <img src="./assets/Frame 36.png" class="rounded-circle mx-auto mb-3" alt="Janyii Kumar">
-          <h5 class="fw-bold mb-0">Janyii Kumar</h5>
-          <p class="text-muted">Data Engineer</p>
-          <div class="d-flex justify-content-center align-items-center gap-2 my-2">
-            <img src="./assets/Vector (2).png" alt="Logo 1">
-            <img src="./assets/uil_exchange.png" alt="">
-            <img src="./assets/image 2.png" alt="Logo 2">
-          </div>
-          <p class="text-muted small mt-3">Figma ipsum component variant main layer. Group image bold strikethrough device blur distribute hand. 
-            Edit vertical library duplicate duplicate editor italic ipsum. Scale team follower underline reesizing reesizing mask font. 
-            Mask project project inspect text effect line object polygon. Scrolling draft frame scrolling community outline fill list editor. 
-            Boolean stroke star select pixel follower comment effect. 
-          </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card flex-shrink-0 text-center p-4 shadow-sm rounded-4 border-0 mx-2 testimonial-card">
-          <img src="./assets/Frame 65.png" class="rounded-circle mx-auto mb-3" alt="Priyanka Thakur">
-          <h5 class="fw-bold mb-0">Priyanka Thakur</h5>
-          <p class="text-muted">Data Engineer</p>
-          <div class="d-flex justify-content-center align-items-center gap-2 my-2">
-            <img src="./assets/Vector (2).png" alt="Logo 1">
-            <img src="./assets/uil_exchange.png" alt="">
-            <img src="./assets/image 2.png" alt="Logo 2">
-          </div>
-          <p class="text-muted small mt-3">Figma ipsum component variant main layer. Group image bold strikethrough device blur distribute hand. 
-            Edit vertical library duplicate duplicate editor italic ipsum. Scale team follower underline reesizing reesizing mask font. 
-            Mask project project inspect text effect line object polygon. Scrolling draft frame scrolling community outline fill list editor. 
-            Boolean stroke star select pixel follower comment effect. 
-          </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card flex-shrink-0 text-center p-4 shadow-sm rounded-4 border-0 mx-2 testimonial-card">
-          <img src="./assets/Frame 36 (1).png" class="rounded-circle mx-auto mb-3" alt="Rahul Kumar">
-          <h5 class="fw-bold mb-0">Rahul Kumar</h5>
-          <p class="text-muted">Data Engineer</p>
-          <div class="d-flex justify-content-center align-items-center gap-2 my-2">
-            <img src="./assets/Vector (2).png" alt="Logo 1">
-            <img src="./assets/uil_exchange.png" alt="">
-            <img src="./assets/image 2.png" alt="Logo 2">
-          </div>
-          <p class="text-muted small mt-3">Figma ipsum component variant main layer. Group image bold strikethrough device blur distribute hand. 
-            Edit vertical library duplicate duplicate editor italic ipsum. Scale team follower underline reesizing reesizing mask font. 
-            Mask project project inspect text effect line object polygon. Scrolling draft frame scrolling community outline fill list editor. 
-            Boolean stroke star select pixel follower comment effect. 
-          </p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="card flex-shrink-0 text-center p-4 shadow-sm rounded-4 border-0 mx-2 testimonial-card">
-          <img src="./assets/Frame 36.png" class="rounded-circle mx-auto mb-3" alt="Amit Kumar">
-          <h5 class="fw-bold mb-0">Amit Kumar</h5>
-          <p class="text-muted">Data Engineer</p>
-          <div class="d-flex justify-content-center align-items-center gap-2 my-2">
-            <img src="./assets/Vector (2).png" alt="Logo 1">
-            <img src="./assets/uil_exchange.png" alt="">
-            <img src="./assets/image 2.png" alt="Logo 2">
-          </div>
-          <p class="text-muted small mt-3">Figma ipsum component variant main layer. Group image bold strikethrough device blur distribute hand. 
-            Edit vertical library duplicate duplicate editor italic ipsum. Scale team follower underline reesizing reesizing mask font. 
-            Mask project project inspect text effect line object polygon. Scrolling draft frame scrolling community outline fill list editor. 
-            Boolean stroke star select pixel follower comment effect. 
-          </p>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="card flex-shrink-0 text-center p-4 shadow-sm rounded-4 border-0 mx-2 testimonial-card">
-          <img src="./assets/Frame 65.png" class="rounded-circle mx-auto mb-3" alt="Neha Sharma">
-          <h5 class="fw-bold mb-0">Neha Sharma</h5>
-          <p class="text-muted">Data Engineer</p>
-          <div class="d-flex justify-content-center align-items-center gap-2 my-2">
-            <img src="assets/Vector (2).png" alt="Logo 1">
-            <img src="./assets/uil_exchange.png" alt="">
-            <img src="./assets/image 2.png" alt="Logo 2">
-          </div>
-          <p class="text-muted small mt-3">Figma ipsum component variant main layer. Group image bold strikethrough device blur distribute hand. 
-            Edit vertical library duplicate duplicate editor italic ipsum. Scale team follower underline reesizing reesizing mask font. 
-            Mask project project inspect text effect line object polygon. Scrolling draft frame scrolling community outline fill list editor. 
-            Boolean stroke star select pixel follower comment effect. 
-          </p>
-        </div>
-      </div>
-
-      <!-- Navigation Buttons -->
-      <div class="text-center mt-4">
-        <button id="slideLeft" class="btn btn-outline-primary rounded-circle me-2">&larr;</button>
-        <button id="slideRight" class="btn btn-outline-primary rounded-circle">&rarr;</button>
-      </div>
-    </div>
-  </div>
-</section>
-</section>
-
-
-<!-- hiring-3logo-section -->
-
-<section>
-  <div class="d-flex text-center justify-content-center gap-2">
-    <h4>400+ Hiring</h4>
-    <h4>Companies</h4>
-  </div>
-
-<div>
-  <div class="logo-container">
-    <div class="d-flex logo-1" id="logoTrack-1">
-      <img src="./assets/Vector (2).png" alt="">
-      <img src="./assets/Logo (1).png" alt="">
-      <img src="./assets/Logo.png" alt="">
-      <img src="./assets/Logo (2).png" alt="">
-      <img src="./assets/Logo (3).png" alt="">
-      <img src="./assets/Logo (4).png" alt="">
-    </div>
-  </div>  
-
-  
-  <div class="logo-container ">
-    <div class="d-flex logo-1" id="logoTrack-2">
-      <img src="./assets/Vector (2).png" alt="">
-      <img src="./assets/Logo (1).png" alt="">
-      <img src="./assets/Logo.png" alt="">
-      <img src="./assets/Logo (2).png" alt="">
-      <img src="./assets/Logo (3).png" alt="">
-      <img src="./assets/Logo (4).png" alt="">
-    </div>
-  </div> 
-
-  
-  <div class="logo-container">
-    <div class="d-flex logo-1" id="logoTrack-3">
-      <img src="./assets/Vector (2).png" alt="">
-      <img src="./assets/Logo (1).png" alt="">
-      <img src="./assets/Logo.png" alt="">
-      <img src="./assets/Logo (2).png" alt="">
-      <img src="./assets/Logo (3).png" alt="">
-      <img src="./assets/Logo (4).png" alt="">
-    </div>
-  </div> 
-
-  
-  <div class="logo-container">
-    <div class="d-flex logo-1" id="logoTrack-4">
-      <img src="./assets/Vector (2).png" alt="">
-      <img src="./assets/Logo (1).png" alt="">
-      <img src="./assets/Logo.png" alt="">
-      <img src="./assets/Logo (2).png" alt="">
-      <img src="./assets/Logo (3).png" alt="">
-      <img src="./assets/Logo (4).png" alt="">
-    </div>
-  </div> 
-</div>
-
-</section>
-
-
-<!-- hiring-box-section -->
-<section class="container hiring-section">
-  <div class="hiring-box-section d-flex flex-column flex-md-row justify-content-between align-items-center">
-    <div class="d-flex flex-column justify-content-center align-items-center">
-      <h4>100%</h4>
-      <h5>100% Eligible learners placed</h5>
-    </div>
-    <div class="d-flex flex-column justify-content-center align-items-center">
-      <h4>100%</h4>
-      <h5>100% Eligible learners placed</h5>
-    </div>
-    <div class="d-flex flex-column justify-content-center align-items-center">
-      <h4>100%</h4>
-      <h5>100% Eligible learners placed</h5>
-    </div>
-  </div>
-</section>
-
-<!-- why choose NIIT -->
-
-<section class="why-choose-section">
-  <div class="why-choose">
     
+  </section>
+ 
 
-      <div class="position-relative z-5 text-center choose-heading">
-        <h1 class="text-white">Why Choose <span>NIIT</span></h1>
-        <p class="text-white">
-          Figma ipsum component variant main layer. Layer outline export pencil device variant.
-          <br>Connection object boolean align device comment.
-        </p>
-      </div>
-
-      <div class="choose-div-section position-relative z-5 d-flex">
-        <div class="flex-fill grid-bg">
-          <img src="./assets/Frame 36 (2).png" alt="">
-          <h5>Heading</h5>
-          <p>Figma ipsum component variant main layer. Layer outline export pencil device variant. Connection object boolean align device comment.</p>
-        </div>
-        <div class="flex-fill">
-          <img src="./assets/Frame 36 (2).png" alt="">
-          <h5>Heading</h5>
-          <p>Figma ipsum component variant main layer. Layer outline export pencil device variant. Connection object boolean align device comment.</p>
-        </div>
-        <div class="flex-fill">
-          <img src="./assets/Frame 36 (2).png" alt="">
-          <h5>Heading</h5>
-          <p>Figma ipsum component variant main layer. Layer outline export pencil device variant. Connection object boolean align device comment.</p>
-        </div>
-        <div class="flex-fill">
-          <img src="./assets/Frame 36 (2).png" alt="">
-          <h5>Heading</h5>
-          <p>Figma ipsum component variant main layer. Layer outline export pencil device variant. Connection object boolean align device comment.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- project section -->
- <section class="project-section">
-  <div class="text-center project-head-text">
-    <h3>Industry-Relevant <span>Projects</span></h3>
-    <p>Work on real projects and build a solid <br>practical understanding</p>
-  </div>
-
-  <div class="d-flex flex-column flex-md-row project-section-card ">
-    <div>
-      <h3>Project Name</h3>
-      <p>Figma ipsum component variant main layer. Pixel hand<br> outline star strikethrough duplicate object editor<br> community.</p>
-      <ul>
-        <li>Figma ipsum component variant main layer. Pixel hand outline star strikethrough duplicate </li>
-        <li>Figma ipsum component variant main layer. Pixel hand outline star strikethrough duplicate </li>
-        <li>Figma ipsum component variant main layer. Pixel hand outline star strikethrough duplicate </li>
-        <li>Figma ipsum component variant main layer. Pixel hand outline star strikethrough duplicate </li>
-        <li>Figma ipsum component variant main layer. Pixel hand outline star strikethrough duplicate </li>
-      </ul>
-      <div class="d-flex project-section-p">
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>Javascript</p>
-        <p>React</p>
-        <p>Rest API</p> 
-      </div>
-      
-    </div>
-    <div>
-      <h3>Project Name</h3>
-      <p>Figma ipsum component variant main layer. Pixel hand <br> outline star strikethrough duplicate object editor <br> community.</p>
-      <ul>
-        <li>Figma ipsum component variant main layer. Pixel hand outline star strikethrough duplicate </li>
-        <li>Figma ipsum component variant main layer. Pixel hand outline star strikethrough duplicate </li>
-        <li>Figma ipsum component variant main layer. Pixel hand outline star strikethrough duplicate </li>
-        <li>Figma ipsum component variant main layer. Pixel hand outline star strikethrough duplicate </li>
-        <li>Figma ipsum component variant main layer. Pixel hand outline star strikethrough duplicate </li>
-      </ul>
-
-      <div class="d-flex project-section-p">
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>Javascript</p>
-        <p>React</p>
-        <p>Rest API</p> 
-      </div>
-
-    </div>
-  </div>
- </section>
-
- <!--Course fee section  -->
-
- <section class="course-section">
-   <div class="container text-white course-heading">
-      <h5>What will it cost you?</h5>
-      <h1>Know Your <span>Course Fees & Structure</span></h1>
-   </div>
-
-   <div class="course-box d-flex flex-column flex-md-row">
-
-    <div class="course-parent">
-      <div class="box-fill-1">
-        <div class="box-fill-2">
-        <h5>Program fees ₹ 1,10,000+18% GST</h5>
-        <h5>Booking fees ₹1,500+18% GST</h5>
-        <p>Total INR 1,50,000 (incl. of taxes)</p>
-        </div>
-
-        <button>Payment Options</button>
-        <button>View Offers</button>
-      </div>
-    </div>
-
-    <div>
-      <div class="d-flex">
-          <div>
-          <h5>What are My finance Options</h5>
-          <p>We have multiple payment options to suit your needs. Full upfront payment gets you a special 5% concession (₹5,500).</p>
-          <span>*All fees shown are exclusive of 18% GST</span>
-           <div class="d-flex">
-            <h5>Payment Options</h5>
-            <h5>Down payment</h5>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
- </section>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
