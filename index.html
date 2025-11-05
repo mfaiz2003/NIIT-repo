@@ -11,34 +11,30 @@
 </head>
 <body>
 
-  <!-- banner section -->
-  <section class="header-section position-absolute">
-
-  <div class="d-flex justify-content-between align-items-center">
-    <div class="px-0 py-0 d-flex justify-content-center align-items-center logo-img">
+<section class="header-section position-absolute z-2 w-100">
+  <div class="d-flex justify-content-between">
+    <div class="logo-img">
       <img src="./assets/niit-logo.png" alt="">
     </div>
     <div class="pt-3"> 
       <button type="button" class="btn btn-warning fw-semibold request-btn" >Request a Call Back</button>
     </div>
   </div>
-  </section>
+</section>
 
-  <!-- banner-text-section -->
+<!-- banner-content-section -->
 
-  <section class="banner-section">
-    <div id="popupContainer"></div>
+<section class="position-relative banner-section">
+     <img src="./assets/Frame 6.png" alt="" class="vh-100 w-100">
+
+  <div class="container position-absolute z-2 start-50 translate-middle-x banner-container">
+  <div class="row mt-5 banner-parent-section">
     
-    <img src="./assets/Frame 6.png" alt="" class="position-absolute z-1 vh-100 w-100">
-
-    <div class="container position-relative z-1">
-      <div class="row d-flex justify-content-between container-parent">
-        <div class="col">
-
-        <div class="text-white rounded-3 h-div">
-          <h5>LEARN WHAT THE INDUSTRY DEMANDS</h5>
-          <h1>JAVA DEVELOPMENT <br>CERTIFICATE <br> <span>PROGRAM</span></h1> 
-      
+    <!-- Left Column -->
+    <div class="col-md-6 banner-left-card">
+      <div class="rounded-3 h-div">
+        <h5>LEARN WHAT THE INDUSTRY DEMANDS</h5>
+        <h1>JAVA DEVELOPMENT <br>CERTIFICATE <br><span>PROGRAM</span></h1> 
 
         <div class="box-ul gap-4">
           <ul>
@@ -62,42 +58,298 @@
             <p>Hiring Partners</p>
           </div>
         </div>
-        </div>
+      </div>
+    </div>
 
-        </div>
+    <!-- Right Column -->
 
-        <!-- banner-form-section -->
-        
-        <div class="col">
-          <div class=" bg-white p-4 rounded-3 text-center text-md-start form-div ">
-            <h5 class="text-center mb-4">Enroll In Just A Few Easy Steps!</h5>
+    <div class="col-md-6 mb-3">
+      <div class="bg-white p-4 rounded-3 text-center text-md-start form-card-section">
+        <h5 class="text-center mb-4">Enroll In Just A Few Easy Steps!</h5>
 
-          <form action="#" class="banner-form-section">
-            <div class="mb-3 form-mobile-input">
-              <input type="text" id="mobile" class="form-control form-control-lg" placeholder="Mobile No">
-            </div>
-        
-            <div class="form-check mb-4">
-              <input type="checkbox" class="form-check-input" id="policy">
-              <label class="form-check-label small text-secondary" for="policy">
-                I agree to <a href="#" class="text-decoration-none text-primary fw-semibold">Privacy Policy</a> &
-                overriding DNC/N DNC for Call/SMS.
-              </label>
-            </div>
-        
-            <button type="submit" class="btn w-100 fw-bold py-2 text-dark" id="openPopup">
-              Request a Call Back
-            </button>
-          </form>
+        <form action="#" class="banner-form-section">
+          <div class="mb-3 form-mobile-input">
+            <input type="text" id="mobile" class="form-control form-control-lg" placeholder="Mobile No">
           </div>
+
+          <div class="form-check mb-4">
+            <input type="checkbox" class="form-check-input" id="policy">
+            <label class="form-check-label small text-secondary" for="policy">
+              I agree to <a href="#" class="text-decoration-none text-primary fw-semibold">Privacy Policy</a> &
+              overriding DNC/N DNC for Call/SMS.
+            </label>
+          </div>
+
+          <button type="submit" class="btn w-100 fw-bold py-2 text-dark" id="openPopup">
+            Request a Call Back
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Curriculum-section -->
+
+<section class="curriculum-section">
+
+  <div class="container ">
+  <div>
+    <h5>Curriculum: Executive Diploma in Data Science & AI</h5>
+    <h1>Experience an all-new 2025 <br><span>Curriculum</span></h1>
+  </div>
+
+  <div class="row curriculum-child-card">
+
+    <div class="col-12 col-md-4">
+      <div class="button-panel">
+        <button onclick="showChild(1, this)">Front-end Dev with React & GenAi Advanced Program</button>
+        <button onclick="showChild(2, this)">SQL Essentials with GenAi</button>
+        <button onclick="showChild(3, this)">Java: Object-Oriented Programming</button>
+        <button onclick="showChild(4, this)">Programming using Python</button>
+        <button onclick="showChild(5, this)">Front-end Dev with React & GenAi Advanced Program</button>
+        <button onclick="showChild(6, this)">SQL Essentials with GenAi</button>
+        <button onclick="showChild(7, this)">Java: Object-Oriented Programming</button>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-md-8">
+      <div class="content-panel">
+        
+        <div id="child1" class="child">
+            <div>
+                <h4>Front-end Dev with React &  GenAi Advanced Program</h4>
+                <p>
+                  Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
+                  Connection object boolean align device comment. Select text editor team hand a star slice 
+                  thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
+                  device variant. Connection object boolean align device comment.
+                </p>
+                <h5>Topics covered</h5>
+      
+                <ul class="curriculum-section-li">
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                </ul>
+
+                <h5>Skills you’ll gain</h5>
+                <div class="content-panel-para">
+                  <p>Java</p>
+                  <p>MySQL</p>
+                  <p>NumPy</p>
+                  <p>Pandas</p>
+                  <p>ChatGPT</p>
+                </div>
+
+                <button>Apply Now</button>
+            </div>
+        </div>
+        
+        <div id="child2" class="child">
+                 <div>
+                <h4>SQL Essentials with GenAi</h4>
+                <p>
+                  Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
+                  Connection object boolean align device comment. Select text editor team hand a star slice 
+                  thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
+                  device variant. Connection object boolean align device comment.
+                </p>
+                <h5>Topics covered</h5>
+      
+                <ul>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                </ul>
+
+                <h5>Skills you’ll gain</h5>
+                <div class="content-panel-para">
+                  <p>Java</p>
+                  <p>MySQL</p>
+                  <p>NumPy</p>
+                  <p>Pandas</p>
+                  <p>ChatGPT</p>
+                </div>
+
+                <button>Apply Now</button>
+            </div>
+        </div>
+
+        <div id="child3" class="child">
+                 <div>
+                <h4>Java: Object-Oriented Programming</h4>
+                <p>
+                  Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
+                  Connection object boolean align device comment. Select text editor team hand a star slice 
+                  thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
+                  device variant. Connection object boolean align device comment.
+                </p>
+                <h5>Topics covered</h5>
+      
+                <ul>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                </ul>
+
+                <h5>Skills you’ll gain</h5>
+                <div class="content-panel-para">
+                  <p>Java</p>
+                  <p>MySQL</p>
+                  <p>NumPy</p>
+                  <p>Pandas</p>
+                  <p>ChatGPT</p>
+                </div>
+
+                <button>Apply Now</button>
+            </div>
+        </div>
+
+        <div id="child4" class="child">
+                 <div>
+                <h4>Programming using Python</h4>
+                <p>
+                  Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
+                  Connection object boolean align device comment. Select text editor team hand a star slice 
+                  thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
+                  device variant. Connection object boolean align device comment.
+                </p>
+                <h5>Topics covered</h5>
+      
+                <ul>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                </ul>
+
+                <h5>Skills you’ll gain</h5>
+                <div class="content-panel-para">
+                  <p>Java</p>
+                  <p>MySQL</p>
+                  <p>NumPy</p>
+                  <p>Pandas</p>
+                  <p>ChatGPT</p>
+                </div>
+
+                <button>Apply Now</button>
+            </div>
+        </div>
+
+        <div id="child5" class="child">
+                 <div>
+                <h4>Front-end Dev with React &  GenAi Advanced Program</h4>
+                <p>
+                  Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
+                  Connection object boolean align device comment. Select text editor team hand a star slice 
+                  thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
+                  device variant. Connection object boolean align device comment.
+                </p>
+                <h5>Topics covered</h5>
+      
+                <ul>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                </ul>
+
+                <h5>Skills you’ll gain</h5>
+                <div class="content-panel-para">
+                  <p>Java</p>
+                  <p>MySQL</p>
+                  <p>NumPy</p>
+                  <p>Pandas</p>
+                  <p>ChatGPT</p>
+                </div>
+
+                <button>Apply Now</button>
+            </div>
+        </div>
+
+        <div id="child6" class="child">
+                 <div>
+                <h4>SQL Essentials with GenAi</h4>
+                <p>
+                  Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
+                  Connection object boolean align device comment. Select text editor team hand a star slice 
+                  thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
+                  device variant. Connection object boolean align device comment.
+                </p>
+                <h5>Topics covered</h5>
+      
+                <ul>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                </ul>
+
+                <h5>Skills you’ll gain</h5>
+                <div class="content-panel-para">
+                  <p>Java</p>
+                  <p>MySQL</p>
+                  <p>NumPy</p>
+                  <p>Pandas</p>
+                  <p>ChatGPT</p>
+                </div>
+
+                <button>Apply Now</button>
+            </div>
+        </div>
+
+        <div id="child7" class="child">
+                 <div>
+                <h4>Java: Object-Oriented Programming</h4>
+                <p>
+                  Figma Ipsum component variant main layer. Layer outline export pencil device variant. 
+                  Connection object boolean align device comment. Select text editor team hand a star slice 
+                  thumbnail italic. Figma Ipsum component variant main layer. Layer outline export pencil 
+                  device variant. Connection object boolean align device comment.
+                </p>
+                <h5>Topics covered</h5>
+      
+                <ul>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                  <li>Figma Ipsum component variant main layer. Layer outline export.</li>
+                </ul>
+
+                <h5>Skills you’ll gain</h5>
+                <div class="content-panel-para">
+                  <p>Java</p>
+                  <p>MySQL</p>
+                  <p>NumPy</p>
+                  <p>Pandas</p>
+                  <p>ChatGPT</p>
+                </div>
+
+                <button>Apply Now</button>
+            </div>
         </div>
 
       </div>
     </div>
-    
-  </section>
- 
+    </div>
 
+
+  </div>
+  </div>
+</section>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
