@@ -7,6 +7,7 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
    crossorigin="anonymous">
+
   <title>NIIT-JAVA DEVELOPMENT CERTIFICATE COURSE</title>
 </head>
 <body>
@@ -351,9 +352,57 @@
   </div>
 </section>
 
+<!-- success section -->
+
+<section>
+     <div class="container-wrapper">
+        <h1>Scrollable Container with 7 Divs</h1>
+        
+        <div class="parent-div" id="parentDiv">
+            <div class="child-div child-1">
+                <div class="number">1</div>
+                <div>First Div</div>
+            </div>
+            <div class="child-div child-2">
+                <div class="number">2</div>
+                <div>Second Div</div>
+            </div>
+            <div class="child-div child-3">
+                <div class="number">3</div>
+                <div>Third Div</div>
+            </div>
+            <div class="child-div child-4">
+                <div class="number">4</div>
+                <div>Fourth Div</div>
+            </div>
+            <div class="child-div child-5">
+                <div class="number">5</div>
+                <div>Fifth Div</div>
+            </div>
+            <div class="child-div child-6">
+                <div class="number">6</div>
+                <div>Sixth Div</div>
+            </div>
+            <div class="child-div child-7">
+                <div class="number">7</div>
+                <div>Seventh Div</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn-nav btn-prev" id="prevBtn" onclick="scrollPrev()">← Previous</button>
+            <button class="btn-nav btn-next" id="nextBtn" onclick="scrollNext()">Next →</button>
+        </div>
+        
+        <div class="indicator" id="indicator">Showing divs 1-3 of 7</div>
+    </div>
+</section>
+
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
  crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 <script src="script.js"></script>
 </body>

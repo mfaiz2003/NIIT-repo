@@ -244,3 +244,106 @@ body{
     color: #6e6e6e;
     font-weight: 400;
 }
+
+     
+        .container-wrapper {
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        
+        .parent-div {
+            display: flex;
+            overflow: hidden;
+            gap: 20px;
+            padding: 20px 0;
+            scroll-behavior: smooth;
+        }
+        
+        .child-div {
+            min-width: calc(33.333% - 14px);
+            height: 300px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .child-div {
+                min-width: calc(100% - 0px);
+            }
+            
+            .parent-div {
+                gap: 20px;
+            }
+        }
+        
+        .child-div:hover {
+            transform: translateY(-5px);
+        }
+        
+        .child-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .child-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .child-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .child-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .child-5 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .child-6 { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
+        .child-7 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+        
+        .child-div .number {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .btn-nav {
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-prev {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-next {
+            background: #764ba2;
+            color: white;
+        }
+        
+        .btn-nav:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .btn-nav:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: scale(1);
+        }
+        
+        .indicator {
+            text-align: center;
+            margin-top: 15px;
+            color: #666;
+            font-weight: 500;
+        }
