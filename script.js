@@ -13,89 +13,78 @@ window.onload = function() {
   showChild(1, firstBtn);
 };
 
-
 const parent = document.getElementById('parentDiv');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
-const indicator = document.getElementById('indicator');
 
 let currentPosition = 0;
-const totalChildren = 7;
+const totalChildren = parent.children.length;
 const visibleChildren = 3;
 const maxPosition = totalChildren - visibleChildren;
 let autoSlideInterval;
 
 function getChildWidth() {
-    const firstChild = parent.querySelector('.child-div');
-    return firstChild.offsetWidth + 20; // width + gap
-}
-
-function updateButtons() {
-    prevBtn.disabled = false;
-    nextBtn.disabled = false;
-    
-    const startDiv = currentPosition + 1;
-    const endDiv = Math.min(currentPosition + visibleChildren, totalChildren);
-    indicator.textContent = `Showing divs ${startDiv}-${endDiv} of ${totalChildren}`;
+  const firstChild = parent.querySelector('.child-div');
+  return firstChild.offsetWidth + 20; 
 }
 
 function scrollNext() {
-    currentPosition++;
-    
-    // Loop back to start when reaching the end
-    if (currentPosition > maxPosition) {
-        currentPosition = 0;
-    }
-    
-    parent.scrollLeft = currentPosition * getChildWidth();
-    updateButtons();
+  currentPosition++;
+  if (currentPosition > maxPosition) currentPosition = 0;
+  parent.scrollLeft = currentPosition * getChildWidth();
 }
 
 function scrollPrev() {
-    currentPosition--;
-    
-    // Loop to end when going before start
-    if (currentPosition < 0) {
-        currentPosition = maxPosition;
-    }
-    
-    parent.scrollLeft = currentPosition * getChildWidth();
-    updateButtons();
+  currentPosition--;
+  if (currentPosition < 0) currentPosition = maxPosition;
+  parent.scrollLeft = currentPosition * getChildWidth();
 }
 
 // Auto-slide function
 function startAutoSlide() {
-    autoSlideInterval = setInterval(() => {
-        scrollNext();
-    }, 3000); // 2 seconds
+  autoSlideInterval = setInterval(scrollNext, 1500);
 }
 
-// Stop auto-slide when user interacts with buttons
 function resetAutoSlide() {
-    clearInterval(autoSlideInterval);
-    startAutoSlide();
+  clearInterval(autoSlideInterval);
+  startAutoSlide();
 }
 
-// Add click event listeners to buttons
 prevBtn.addEventListener('click', () => {
-    scrollPrev();
-    resetAutoSlide();
+  scrollPrev();
+  resetAutoSlide();
 });
 
 nextBtn.addEventListener('click', () => {
-    scrollNext();
-    resetAutoSlide();
+  scrollNext();
+  resetAutoSlide();
 });
 
-// Pause auto-slide on hover
-parent.addEventListener('mouseenter', () => {
-    clearInterval(autoSlideInterval);
-});
-
-parent.addEventListener('mouseleave', () => {
-    startAutoSlide();
-});
+parent.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+parent.addEventListener('mouseleave', startAutoSlide);
 
 // Initialize
-updateButtons();
 startAutoSlide();
+
+
+  const images = document.querySelectorAll('.hiring-logo-img img');
+  let index = 0;
+
+  function showNextImage() {
+    const current = images[index];
+    current.classList.remove('active');
+    current.classList.add('prev');
+
+    index = (index + 1) % images.length; // next image index
+
+    const next = images[index];
+    next.classList.remove('prev');
+    next.classList.add('active');
+  }
+
+  // initialize first image
+  images[0].classList.add('active');
+
+  // har 1 second me next image show hogi
+  setInterval(showNextImage, 1000);
+
